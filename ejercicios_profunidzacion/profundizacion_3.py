@@ -43,8 +43,32 @@ print("Mi organizador académico (#_#)")
 # de todas las notas, que irá almacenando en esta variable
 sumatoria = 0           # Ya le hemos inicializado en 0
 
-cantidad_notas = 0      # Aquí debe contar cuantas notas válidas encontró
-cantidad_ausentes = 0   # Aquí debe contar cuantos ausentes hubo
+notas_len = len(notas)
+
+notas_validas = 0
+notas_invalidas = 0
+
+
+
+for i in notas:
+    sumatoria +=i
+
+for i in notas:
+    if i >= 0:
+        notas_validas +=1
+    else:
+        notas_invalidas +=1
+
+
+
+print(f"La cantidad de notas son: {notas_validas}")
+print(f"La cantidad de ausentes son: {notas_invalidas}")
+
+
+promedio = (sumatoria / notas_len)    
+print(f"El promedio de todas las notas es: {promedio}")
+
+
 
 # Realice aquí el bucle para recorrer todas las notas
 # y cacular la sumatoria
@@ -54,5 +78,16 @@ cantidad_ausentes = 0   # Aquí debe contar cuantos ausentes hubo
 
 # Utilice la nota promedio calculada y transformela
 # a calificación con letras, imprima en pantalla el resultado
+
+if promedio >= 90:
+    print("-----> A")
+elif promedio >= 80:
+    print("-----> B")
+elif promedio >= 70:
+    print("-----> C")
+elif promedio >= 60:
+    print("-----> D")
+else:
+    print("-----> F")
 
 # Imprima en pantalla al cantidad de ausentes

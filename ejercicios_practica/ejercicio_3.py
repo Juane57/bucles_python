@@ -1,7 +1,7 @@
 # Bucles [Python]
 # Ejercicios de práctica
 
-# Autor: Inove Coding School
+# Autor: Juan Emilio Dalcol
 # Version: 2.0
 
 # IMPORTANTE: NO borrar los comentarios
@@ -14,5 +14,9 @@
 # La sumatoria se deberá ir guardando en la variable "suma"
 numeros = [1, 5, -1, 6, 10, 2, -5]
 suma = 0   # Variable ya inicializada, la suma arranca en cero
+
+for numero in numeros:
+    suma += numero 
+    print(suma)
 
 print("terminamos!, el resultado final almacenado en suma debe ser 18")

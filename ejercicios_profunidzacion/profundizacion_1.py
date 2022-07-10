@@ -1,7 +1,7 @@
 # Bucles [Python]
 # Ejercicios de profundización
 
-# Autor: Inove Coding School
+# Autor: Juan EMilio Dalcol
 # Version: 2.0
 
 # NOTA: 
@@ -26,6 +26,9 @@ sino que va hasta el anterior.
 
 print('Comenzamos a ponernos serios!')
 # Empezar aquí la resolución del ejercicio
+inicio = int(input('Ingrese el primer número de la secuencia\n'))
+fin = int(input('Ingrese el último número de la secuencia\n'))
+
 
 # inicio = ....
 # fin = ....
@@ -33,7 +36,21 @@ print('Comenzamos a ponernos serios!')
 # cantidad_numeros ....
 # sumatoria ....
 
+cantidad_numeros = 0
+sumatoria = 0
+
 # bucle.....
+for i in range(inicio, fin):
+    cantidad_numeros +=1
+    sumatoria +=i
+sumatoria += fin
+cantidad_numeros +=1
+
+promedio = sumatoria / cantidad_numeros
+
+print(f" La cantidad de numeros ingresados son: {cantidad_numeros}")
+print(f" Los numero suman entre si: {sumatoria}")
+print (f" El promedio entre los numeros sumados\n y la cantidad de numeros ingresados es: {promedio}")
 
 # Al terminar el bucle calcular el promedio como:
 # promedio = sumatoria / cantidad_numeros

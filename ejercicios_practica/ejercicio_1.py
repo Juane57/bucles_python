@@ -1,7 +1,7 @@
 # Bucles [Python]
 # Ejercicios de práctica
 
-# Autor: Inove Coding School
+# Autor: Juan Emilio Dalcol
 # Version: 2.0
 
 # IMPORTANTE: NO borrar los comentarios
@@ -16,9 +16,14 @@ x = 0
 # el valor de "x" incremente "1" en cada iteración
 condicion = False
 
+while x < 6:
+    x += 1
+
 # reemplace "condicion" por lo que crea necesario
-while condicion:    
+while True:    
     print("Valor de x =", x)
+    x +=1
+    break
     # Coloque la línea de código para que "x" incremente "1"
 
 x = 5
@@ -27,8 +32,9 @@ x = 5
 # Además, complete la línea de código necesaria para que
 # el valor de "x" decremente "1" en cada iteración
 
-while condicion:    # reemplace "condicion" por lo que crea necesario
+while x >= 0:    # reemplace "condicion" por lo que crea necesario
     print("Valor de x =", x)
+    x -=1
     # Coloque la línea de código para que "x" decremente "1"
 
 print("terminamos!")

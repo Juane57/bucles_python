@@ -1,7 +1,7 @@
 # Bucles [Python]
 # Ejercicios de práctica
 
-# Autor: Inove Coding School
+# Autor: Juan Emilio Dalcol
 # Version: 2.0
 
 # IMPORTANTE: NO borrar los comentarios
@@ -18,10 +18,16 @@
 
 inicio = int(input('Ingrese el primer número de la secuencia\n'))
 fin = int(input('Ingrese el último número de la secuencia\n'))
-sumatoria = 0  # Inicializo el contador en 0
+sumatoria = 0 
+ # Inicializo el contador en 0
 
 # for ... in range(....)
 
 # Imprimir el valor de la sumatoria
 
+for i in range(inicio,fin):
+    sumatoria += i
+    print (sumatoria)
+sumatoria += fin #para incluir el numero fin en la secuencia 
+print(sumatoria)
 print("terminamos!")
