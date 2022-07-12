@@ -44,7 +44,7 @@ for i in range(inicio, fin):
     cantidad_numeros +=1
     sumatoria +=i
 sumatoria += fin
-cantidad_numeros +=1
+
 
 promedio = sumatoria / cantidad_numeros
 
